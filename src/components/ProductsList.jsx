@@ -131,7 +131,7 @@ export const ProductsList = () => {
             <div className="card-body p-4">
               <h1 className="display-5 text-center mb-4">
                 <i className="bi bi-shop me-3"></i>
-                Zrour zamel
+                Products
               </h1>
 
               <form className="mb-4">
