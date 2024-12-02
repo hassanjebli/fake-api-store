@@ -74,7 +74,9 @@ export const ProductsList = () => {
 
   const getCategories = async () => {
     try {
-      const response = await fetch("https://fakestoreapi.com/products/categories");
+      const response = await fetch(
+        "https://fakestoreapi.com/products/categories"
+      );
       const data = await response.json();
       setCategories(data);
     } catch (error) {
@@ -91,9 +93,7 @@ export const ProductsList = () => {
       <div className="d-flex flex-wrap gap-2 mb-4">
         <button
           className={`btn ${
-            selectedCategory === ""
-              ? "btn-primary"
-              : "btn-outline-primary"
+            selectedCategory === "" ? "btn-primary" : "btn-outline-primary"
           } text-capitalize shadow-sm`}
           onClick={() => setSelectedCategory("")}
         >
