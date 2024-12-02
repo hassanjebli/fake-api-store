@@ -1,0 +1,33 @@
+/* Add this CSS to your stylesheet */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .product-image:hover {
+    transform: scale(3);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .description-cell:hover {
+    white-space: normal;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 400px !important;
+    width: max-content;
+  }
